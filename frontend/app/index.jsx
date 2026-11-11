@@ -72,10 +72,13 @@ return (
   <View style={styles.container}>
     <View style={styles.header}>
       <Text style={styles.title}>Robots</Text>
+    </View>
+
+    <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
       <Link href="/add" style={styles.addBtn}>+ Add</Link>
-      {/* <Link href="/modify" style={styles.addBtn}>+ Modify</Link>
-      <Link href="/delete" style={styles.addBtn}>+ Delete</Link>
-      <Link href="/search" style={styles.addBtn}>+ Search</Link> */}
+      <Link href="/modify" style={styles.addBtn}>Modify</Link>
+      <Link href="/delete" style={styles.addBtn}>Delete</Link>
+      <Link href="/search" style={styles.addBtn}>Search</Link>
     </View>
 
     {loading && <ActivityIndicator size="large" />}
@@ -110,4 +113,3 @@ return (
   </View>
 );
 }
-

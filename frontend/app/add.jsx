@@ -27,7 +27,7 @@ export default function Add() {
 const saveRobot = async () => {
   const body = { name, price: parseFloat(price), description, imageUrl };
   try {
-    const res = await fetch(`${BASE_URL}/robotse`, {
+    const res = await fetch(`${BASE_URL}/robots`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
@@ -72,4 +72,3 @@ const saveRobot = async () => {
     </View>
   );
 }
-
